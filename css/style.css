@@ -148,7 +148,8 @@ h6 {
   align-items: center
 }
 .header__logo {
-  z-index: 15
+  z-index: 15;
+  transition: all .3s
 }
 .header__logo img {
   width: 4.9375rem
@@ -192,6 +193,9 @@ h6 {
   line-height: 125%;
   margin-bottom: 1.625rem
 }
+.top-footer__logo {
+  transition: all .3s
+}
 .top-footer__logo img {
   width: 15.5rem
 }
@@ -199,6 +203,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between
+}
+.top-footer__link {
+  transition: all .3s
 }
 .top-footer__slogan {
   display: flex;
@@ -1116,8 +1123,20 @@ h6 {
   }
 }
 @media (any-hover:hover) {
+  .header__logo:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
   .menu__link:hover {
     color: #4737ff
+  }
+  .top-footer__logo:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  .top-footer__link:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
   }
   .content-hero__button:hover {
     top: .1875rem;
